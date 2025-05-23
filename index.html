@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voices of Jerusalem Hackathon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #F9F7F1;
+            color: #2F4A3D;
+        }
+        header {
+            background-color: #F0C33A;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+        }
+        header img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #2F4A3D;
+        }
+        .main-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            flex-wrap: nowrap;
+        }
+        .left-column {
+            width: 30%;
+        }
+        .right-column {
+            width: 70%;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                width: 100%;
+            }
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin: 0 0 1rem;
+            color: #46A095;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            height: 600px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/VOJ%20-%20Voices%20of%20jerusalem%20logo.jpeg" alt="Voices of Jerusalem Logo">
+        <h1>Voices of Jerusalem Hackathon</h1>
+    </header>
+    <div class="main-content">
+        <div class="left-column">
+            <h2 class="section-title">Hackathon Schedule</h2>
+            <!-- Replace with your actual calendar embed link -->
+            <iframe src="https://calendar.google.com/calendar/embed?wkst=1&ctz=Asia%2FJerusalem&showPrint=1&mode=AGENDA&src=OTY3ZTAxMDgzMTQ0MzY5MTAyNjgzZWZhYjZlMDc4MjY5MmExOThmM2RkMWNlZGRlMWY1YTc4NjE2NTVlY2ZhZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238E24AA&bgcolor=%23F9F7F1" style="border:solid 0px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="right-column">
+            <h2 class="section-title">Shared Resources</h2>
+            <!-- Replace with your actual Google Drive folder embed link -->
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1r8eevowc3gYbjafIp1zPBWwvqWRNkGik#grid"></iframe>
+        </div>
+    </div>
+</body>
+</html>
