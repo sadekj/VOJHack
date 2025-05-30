@@ -16,7 +16,12 @@
             background-color: #F0C33A;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 1rem;
+        }
+        .logo-title {
+            display: flex;
+            align-items: center;
         }
         header img {
             height: 60px;
@@ -26,6 +31,19 @@
             font-size: 2rem;
             margin: 0;
             color: #2F4A3D;
+        }
+        .nav-link {
+            font-size: 1rem;
+            color: #2F4A3D;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #F9F7F1;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #f3e5ab;
         }
         .main-content {
             padding: 2rem;
@@ -63,8 +81,11 @@
 </head>
 <body>
     <header>
-        <img src="images/VOJ%20-%20Voices%20of%20jerusalem%20logo.jpeg" alt="Voices of Jerusalem Logo">
-        <h1>Voices of Jerusalem Hackathon</h1>
+        <div class="logo-title">
+            <img src="images/VOJ%20-%20Voices%20of%20jerusalem%20logo.jpeg" alt="Voices of Jerusalem Logo">
+            <h1>Voices of Jerusalem Hackathon</h1>
+        </div>
+        <a class="nav-link" href="surveys.html">Today's Survey</a>
     </header>
     <div class="main-content">
         <div class="left-column">
